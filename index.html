@@ -7,20 +7,50 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;800;900&family=Nunito:wght@300;500;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700;800;900&family=Nunito:wght@300;500;700;900&display=swap"
     rel="stylesheet">
-
-
   <link rel="stylesheet" href="css/style.css">
-
   <script src="js/start.js"></script>
   <script src="js/botoes.js" defer></script>
   <title>Criptografia - Challenge</title>
 </head>
 
 <body>
-  <header></header>
-  <main></main>
+  <header>
+
+  </header>
+  <main class="home">
+    <div class="container-home">
+      <div class="icon-alura">
+        <a href="https://www.alura.com.br/challenges/challenge-one-logica/sprint01-construa-decodificador-texto-com-javascript#btn-start" target="_blank">
+          <img src="./assets/alura-icon.png" alt="icon alura">
+        </a>
+      </div>
+
+      <div class="container-input">
+        <textarea name="text-area" id="text-area-input" cols="30" rows="30"></textarea>
+        <div class="botoes">
+          <div class="content-up-button">
+            <img src="./assets/exclamation.png" alt="exclamation">
+            <p>Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <button class="button-crypt">Criptografar</button>
+          <button class="button-decrypt">Descriptografar</button>
+        </div>
+      </div>
+
+      <div class="container-decrypt">
+        <div>
+          <img src="./assets/banner.svg" alt="banner">
+        </div>
+        <div class="content-decrypt">
+          <h2>Nenhuma mensagem encontrada</h2>
+          <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
   <footer></footer>
 </body>
 
