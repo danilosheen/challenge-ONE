@@ -16,6 +16,12 @@ button {
   cursor: pointer;
 }
 
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+} 
+
 .home {
   background-color: #f3f5fc;
 }
@@ -41,6 +47,7 @@ button {
   justify-content: center;
   height: 70%;
   padding-bottom: 30px;
+  gap: 30px;
 }
 
 .container-input {
@@ -120,10 +127,10 @@ button {
 
 .text-decrypt {
   padding: 20px;
-  font-size: 28px !important;
+  font-size: 28px;
   background-color: transparent;
   width: 100%;
-  height: 100%;
+  height: 90%;
   border: none;
   resize: none;
 }
@@ -184,7 +191,7 @@ button {
     padding-left: 20px;
   }
 
-  .img-banner{
+  .img-banner {
     display: none;
   }
 
@@ -219,6 +226,10 @@ button {
     height: 300px;
   }
 
+  .container-input{
+    width: 60%;
+  }
+
   .content-decrypt {
     text-align: center;
     width: 80%;
@@ -227,12 +238,13 @@ button {
     display: none;
   }
 
-  .container-decrypt{
+  .container-decrypt {
     width: 80%;
     max-width: 400px;
   }
 
-  #text-area-input {
+  #text-area-input,
+  .text-decrypt {
     font-size: 22px;
   }
 
@@ -247,5 +259,11 @@ button {
 
   .container-decrypt p {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container-input{
+    width: 80%;
   }
 }
