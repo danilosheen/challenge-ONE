@@ -9,9 +9,12 @@ function resetText() {
   texto.style.display = "none";
 }
 
+function limparTexto() {
+  let textToCrypt = document.getElementById("text-area-input");
+  textToCrypt.value = "";
+}
+
 function limparContainerDecrypt() {
-  let banner = document.querySelector(".img-banner");
-  banner.style.display = "none";
 
   let contentDecrypt = document.querySelector(".content-decrypt");
   contentDecrypt.style.display = "none";
@@ -61,8 +64,7 @@ function copiarTexto() {
       console.error("Erro ao copiar texto para o clipboard: ", error);
     });
 
-  let textToCrypt = document.getElementById("text-area-input");
-  textToCrypt.value = "";
+  limparTexto();
 }
 
 function crypt() {
@@ -82,6 +84,8 @@ function crypt() {
 
   let botaoCopiar = document.querySelector(".button-copiar");
   botaoCopiar.style.display = "block";
+
+  limparTexto();
 }
 
 function decrypt() {
@@ -98,4 +102,6 @@ function decrypt() {
 
   let containerTexto = document.querySelector(".container-text-decrypt");
   containerTexto.style.display = "block";
+
+  limparTexto();
 }

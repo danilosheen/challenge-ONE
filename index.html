@@ -2,65 +2,72 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700;800;900&family=Nunito:wght@300;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
   <script src="js/index.js" defer></script>
   <title>Criptografia - Challenge</title>
 </head>
 
 <body>
-  <header>
-
-  </header>
+  <header></header>
   <main class="home">
+    <div class="icon-alura">
+      <a href="https://www.alura.com.br/challenges/challenge-one-logica/sprint01-construa-decodificador-texto-com-javascript#btn-start"
+        target="_blank">
+        <img src="./assets/alura-icon.png" alt="icon alura" />
+      </a>
+    </div>
     <div class="container-home">
-      <div class="icon-alura">
-        <a href="https://www.alura.com.br/challenges/challenge-one-logica/sprint01-construa-decodificador-texto-com-javascript#btn-start"
-          target="_blank">
-          <img src="./assets/alura-icon.png" alt="icon alura">
-        </a>
-      </div>
-
       <div class="container-input">
-        <textarea placeholder="Digite seu texto" name="text-area" id="text-area-input" cols="30" rows="30"></textarea>
+        <textarea placeholder="Digite seu texto" name="text-area" id="text-area-input"></textarea>
         <div class="botoes">
           <div class="content-up-button">
-            <img src="./assets/exclamation.png" alt="exclamation">
+            <img src="./assets/exclamation.png" alt="exclamation" />
             <p>Apenas letras minúsculas e sem acento.</p>
           </div>
           <div class="botoes-crypt-decrypt">
-            <button onclick="crypt()" class="button-crypt">Criptografar</button>
-            <button onclick="decrypt()" class="button-decrypt">Descriptografar</button>
+            <button onclick="crypt()" class="button-crypt">
+              Criptografar
+            </button>
+            <button onclick="decrypt()" class="button-decrypt">
+              Descriptografar
+            </button>
           </div>
         </div>
       </div>
-
       <div class="container-decrypt">
-        <div>
-          <img class="img-banner" src="./assets/banner.svg" alt="banner">
-        </div>
-
-        <div class="container-text-decrypt">
-          <textarea class="text-decrypt"></textarea>
-        </div>
-
         <div class="content-decrypt">
-          <h2>Nenhuma mensagem encontrada</h2>
-          <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+          <div class="container-banner">
+            <img class="img-banner" src="./assets/banner.svg" alt="banner" />
+          </div>
+          <div class="text-banner">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>
+              Digite um texto que você deseja criptografar ou descriptografar
+            </p>
+          </div>
         </div>
-
-        <button onclick="copiarTexto()" class="button-copiar">Copiar</button>
+        <div class="container-text-decrypt">
+          <textarea class="text-decrypt" disabled></textarea>
+          <button onclick="copiarTexto()" class="button-copiar">
+            Copiar
+          </button>
+        </div>
       </div>
     </div>
-
   </main>
-  <footer></footer>
+  <footer class="rodape">
+    <p>
+      Desenvolvido por
+      <a href="https://www.linkedin.com/in/danilo-ferreira-silva/">Danilo Ferreira</a>
+    </p>
+  </footer>
 </body>
 
 </html>
